@@ -1,8 +1,10 @@
+#Installing the required packages, if they aren't installed already.
 if(!is.element("plyr", installed.packages()[,1])){
   print("Installing packages")
   install.packages("plyr")
 }
 library(plyr)
+
 #Reading the Data and unzipping it.
 fileurl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 isfolderthere <- file.exists("UCI HAR Dataset")
